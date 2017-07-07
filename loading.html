@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+  <HEAD visitedcolor="#61e1ed" linkcolor="#000000">
+    <META content="IE=5.0000" http-equiv="X-UA-Compatible">
+    <META content="text/html; charset=UTF-8" http-equiv=Content-Type>
+    <META content=zh-cn http-equiv=Content-Language>
+    <META name=page-view-size content=1280*720>
+    <STYLE type=text/css>FONT {FONT-FAMILY: 黑体;} DIV {POSITION: absolute}</STYLE>
+    <STYLE type=text/css>SPAN {FONT-FAMILY: 黑体;  COLOR: #000000; FONT-WEIGHT: bolder; MARGIN-LEFT: 0px; MARGIN-TOP: 0px} </STYLE>       
+    <META name=GENERATOR content="MSHTML 11.00.9600.18349"> 
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">     
+    function countDown(secs,surl){     
+     var jumpTo = document.getElementById('jumpTo');
+     jumpTo.innerHTML=secs;  
+     if(--secs>0){     
+         setTimeout("countDown("+secs+",'"+surl+"')",2000);     
+         }     
+     else{       
+         location.href=surl;     
+         }     
+     }     
+  </script> 
+  </HEAD>
+  
+  <BODY class="loaBody" onload=init() style="BACKGROUND-REPEAT: no-repeat" bottomMargin=0 leftMargin=0 rightMargin=0 topMargin=0 bgColor=#fff marginheight="0" marginwidth="0">
+    <table class="loaTable">
+      <tr><td><img class="loaImg" src="img/loading.gif"/></td></tr>
+      <tr><td><span id="jumpTo">5</span><span class="loading">正在为您开通,请稍候...</span></td></tr>   
+    </table>
+    <script type="text/javascript">countDown(5,'buyFail.html');</script>           
+  </BODY>
+</HTML>
+
+
